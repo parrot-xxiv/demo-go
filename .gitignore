@@ -1,0 +1,41 @@
+# Go binaries
+/bin/
+/build/
+*.exe
+*.exe~
+*.out
+*.test
+*.dll
+*.so
+*.dylib
+
+# Go workspace and modules
+vendor/
+Gopkg.lock
+Gopkg.toml
+
+# Go module and cache files
+go.sum
+go.mod
+*.test
+*.prof
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# OS files
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Debugger and profiler data
+*.pprof
+*.heap
+*.allocs
+*.block
+*.goroutine
+*.threadcreate
+*.cpu
