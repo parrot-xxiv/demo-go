@@ -23,10 +23,11 @@ func optionB() {
 func main() {
 	for {
 		var x int
+		fmt.Print("\033[H\033[2J")
 		fmt.Println("Choose app: ")
-		fmt.Println("1 Option A")
-		fmt.Println("2 Option B")
-		fmt.Println("3 Exit")
+		fmt.Println("[1] Calculator")
+		fmt.Println("[2] ???")
+		fmt.Println("[3] Exit")
 		fmt.Scan(&x)
 
 		switch x {
@@ -40,5 +41,8 @@ func main() {
 		default:
 			fmt.Println("Not an option")
 		}
+
+		fmt.Println("Press Enter to continue...")
+		fmt.Scanln()
 	}
 }
